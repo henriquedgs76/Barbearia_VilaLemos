@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Vila Lemos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="/img/logo.png" alt="Barbearia Vila Lemos Logo" class="logo">
+            <button id="menuToggle" class="menu-toggle">&#9776;</button>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#" id="sobreLink">Sobre</a></li>
+                <li><a href="#" id="servicosLink">Serviços</a></li>
+                <li><a href="#" id="contatosLink">Contatos</a></li>
+                <li><a href="#" id="localizacaoLink">Localização</a></li>
+            </ul>
+            <button id="agendarHorarioBtn" class="agendar-btn">Agendar horário</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Seu estilo é a expressão mais autêntica da sua atitude e personalidade.</h1>
+            <p>Horário de funcionamento: 09:00 às 18:00</p>
+            
+        </div>
+    </section>
+
+    <section class="barbearia-info" id="barbearia-info">
+        <div class="barbearia-info-content">
+            <h2>Sobre a Barbearia Vila Lemos</h2>
+            <p><span class="highlight">Bem-vindo à Barbearia Vila Lemos,</span> sua barbearia de bairro no coração de Vila Lemos, Campinas/SP. Aqui, a tradição e o aconchego se encontram para proporcionar uma experiência única de cuidado e estilo. Ao contrário das barbearias de shopping, que podem parecer impessoais e superficiais, a nossa barbearia é um verdadeiro ponto de encontro local, onde o atendimento personalizado e o bom papo são a nossa especialidade.</p>
+
+            <h3>Um Espaço Aconchegante e Familiar</h3>
+            <p>Em nossa barbearia, você encontra um ambiente descontraído e acolhedor, típico das barbearias de bairro. Nosso espaço é pensado para que você se sinta em casa, enquanto cuidamos do seu visual com o máximo de dedicação e profissionalismo. A decoração é simples e charmosa, refletindo o estilo e a personalidade do bairro Vila Lemos.</p>
+
+            <h3>Atendimento Personalizado</h3>
+            <p>Nós nos comprometemos com você. Aqui, cada cliente é tratado como parte da família. Conhecemos os nossos clientes pelo nome e sabemos do que eles gostam. Oferecemos cortes de cabelo e serviços de barba que atendem às suas necessidades e preferências individuais, sempre com um toque pessoal que faz toda a diferença.</p>
+
+            <h3>Serviços de Qualidade</h3>
+            <ul>
+                <li><strong>Cortes de Cabelo:</strong> Seja para um visual clássico ou algo mais moderno, nosso barbeiro esta pronto para transformar seu estilo com precisão e cuidado.</li>
+                <li><strong>Aparação de Barba:</strong> Cuide da sua barba com um serviço de aparação que realça sua personalidade e estilo.</li>
+                <li><strong>Tratamentos Especiais:</strong> Oferecemos tratamentos para manter seu cabelo e barba saudáveis e bem cuidados.</li>
+            </ul>
+
+            <h3>Nossa Filosofia</h3>
+            <p>Acreditamos que uma barbearia é mais do que um lugar para cortar o cabelo. É um espaço onde se criam laços, se compartilha histórias e se vivencia a comunidade. Na Vila Lemos, somos uma extensão do seu dia a dia, proporcionando um serviço que vai além do simples corte de cabelo.</p>
+
+            <p>Visite-nos e descubra o verdadeiro espírito de uma barbearia de bairro. Estamos aqui para oferecer um atendimento que é tão único quanto você. Venha para a Barbearia Vila Lemos e faça parte da nossa história.</p>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section class="services" id="servicos">
+        <div class="services-content">
+            <h2>Nossos Serviços</h2>
+            <div class="service-items">
+                
+                <div class="service-item" >
+                    <img src="/img/cabelo.jpg" alt="Corte Clássico">
+                    <h3>Corte Clássico</h3>
+                    <p>O corte clássico que nunca sai de moda. Ideal para quem busca um visual tradicional e bem cuidado.</p>
+                    <p>R$25,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/corte-moderno.jpg" alt="Corte Moderno">
+                    <h3>Corte Moderno</h3>
+                    <p>Cortes contemporâneos que combinam estilo e personalidade. Perfeito para quem deseja estar na moda.</p>
+                    <p>R$25,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/barba.jpg" alt="Aparação de Barba">
+                    <h3>Aparação de Barba</h3>
+                    <p>Cuidados completos com a barba, incluindo aparo, modelagem e hidratação para um visual impecável.</p>
+                    <p>R$15,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/sobrancelha.jpg" alt="Design de Sobrancelhas">
+                    <h3>Design de Sobrancelhas</h3>
+                    <p>Design e modelagem de sobrancelhas para realçar seu olhar e harmonizar o rosto.</p>
+                    <p>R$10,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/platinado.jpg" alt="Platinado">
+                    <h3>Platinado</h3>
+                    <p>Transforme seu visual com um platinado moderno e estiloso.</p> 
+                    <p>R$80,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/barba-completa.jpg" alt="Barba Completa">
+                    <h3>Barba Completa</h3>
+                    <p>Cuidados completos para a barba, incluindo lavagem, hidratação e modelagem de acordo com seu estilo.</p>
+                    <p>R$25,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/luzes.jpg" alt="Luzes">
+                    <h3>Luzes</h3>
+                    <p>Dê brilho e dimensão ao seu cabelo com luzes feitas sob medida.</p>
+                    <p>R$40,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/freestyle.jpg" alt="Freestyle">
+                    <h3>Freestyle</h3>
+                    <p>Estilo livre para personalizar seu corte com desenhos e detalhes únicos.</p>
+                    <p>R$30,00</p>
+                </div>
+                <div class="service-item">
+                    <img src="/img/corte-crianca.jpg" alt="Corte Infantil">
+                    <h3>Corte Infantil</h3>
+                    <p>Cortes especiais para crianças, com um atendimento cuidadoso e amigável.</p>
+                    <p>R$25,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mapaSection">
+        <h2>Localização</h2>
+        <!-- Mapa do Google Maps -->
+        <iframe
+            id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.783381872099!2d-47.03747332377795!3d-22.921359338393785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee1eb5fdc35%3A0xaad1441a6866a268!2sR.%20N%C3%ADcola%20Di%20Marzio%2C%20110%20-%20Vila%20Lemos%2C%20Campinas%20-%20SP%2C%2013100-490!5e0!3m2!1spt-BR!2sbr!4v1725538735798!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Barbearia Vila Lemos</p>
+        <div class="social-icons"></div>
+        <div class="footer-contact" id="footer-contact">
+            <p>Precisa de ajuda com o agendamento? <a href="https://api.whatsapp.com/send?phone=5519995618697" target="_blank" class="whatsapp-link">Clique aqui</a></p>
+            <a href="https://api.whatsapp.com/send?phone=5519995618697" target="_blank">
+                <img src="/img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+                <a href="https://www.instagram.com/barbearia_vilalemos/" target="_blank"><img src="/img/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100089040384068&mibextid=ZbWKwL" target="_blank"><img src="/img/facebook-icon.png" alt="Facebook"></a>
+            </a>
+        </div>
+    </footer>
+    
+    
+    <!-- Modal de Agendamento -->
+<div id="agendarHorarioModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Agendar horário</h2>
+        <form id="agendarForm">
+            <label for="nomeCompleto">Nome completo</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        
+            <label for="dataNascimento">Data de nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            
+            <label for="data">Selecione a data de agendamento</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="unidade">Selecione a unidade</label>
+            <select id="unidade" name="unidade">
+                <option value="Vila Lemos">Campinas/SP - Vila Lemos</option>
+            </select>
+
+            <label for="horario">Selecione um horário</label>
+            <div class="horario-buttons">
+                <button type="button" class="horario-btn">09:00</button>
+                <button type="button" class="horario-btn">09:30</button>
+                <button type="button" class="horario-btn">10:00</button>
+                <button type="button" class="horario-btn">10:30</button>
+                <button type="button" class="horario-btn">11:00</button>
+                <button type="button" class="horario-btn">11:30</button>
+                <button type="button" class="horario-btn">12:00</button>
+                <button type="button" class="horario-btn">12:30</button>
+                <button type="button" class="horario-btn">13:00</button>
+                <button type="button" class="horario-btn">13:30</button>
+                <button type="button" class="horario-btn">14:00</button>
+                <button type="button" class="horario-btn">14:30</button>
+                <button type="button" class="horario-btn">15:00</button>
+                <button type="button" class="horario-btn">15:30</button>
+                <button type="button" class="horario-btn">16:00</button>
+                <button type="button" class="horario-btn">16:30</button>
+                <button type="button" class="horario-btn">17:00</button>
+                <button type="button" class="horario-btn">17:30</button>
+                <button type="button" class="horario-btn">18:00</button>
+
+            </div>
+
+            <button type="submit" id="submitBtn" class="submit-btn">Agendar horário</button>
+            
+
+        </form>
+    </div>
+</div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

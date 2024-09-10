@@ -1,0 +1,742 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+p {
+    font-size: 18px;
+    
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav ul li a:hover {
+    color: #FFD700; /* Mudança de cor */
+    transform: scale(1.5); /* Leve aumento de tamanho */
+}
+
+ /* Animação de fundo sob o link ao passar o mouse */
+ nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #FFD700;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+ /* Outros estilos */
+ header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+header nav a {
+    color: #fff;
+}
+
+.logo {
+    animation: float 1s ease-in-out infinite;
+    max-height: 100px;
+    
+}
+
+.agendar-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    
+}
+
+.agendar-btn:hover {
+    background-color: #e00f19;
+    
+}
+
+
+
+.hero {
+    
+    background-size: cover;
+    color: rgb(7, 5, 5);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgb(7, 5, 5);
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 30%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 50px;
+}
+
+
+/* Estilos para o Modal de Agendamento */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Coloca o modal acima de outros conteúdos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente */
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #FFA500;
+    outline: none;
+}
+/* Estilos para o campo de telefone */
+input[type="tel"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="tel"]:focus {
+    border-color: #FFA500;
+    outline: none;
+}
+
+/* Estilos para o campo de data de nascimento */
+input[type="date"].birthdate {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+input[type="date"].birthdate:focus {
+    border-color: #FFA500;
+    outline: none;
+}
+
+.horario-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.horario-btn {
+    background-color: #FFA500;
+    color: rgb(10, 10, 10);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.horario-btn:hover,
+.horario-btn.active {
+    background-color: #cc8400;
+}
+
+.submit-btn {
+    background-color: #FFA500;
+    color: rgb(17, 16, 16);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #cc8400;
+}
+.horario-btn.active {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+/* Seção Serviços */
+.services {
+    position: relative;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.services::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background-servicos.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Controla a transparência */
+    z-index: -1;
+}
+
+.services-content h2  {
+    font-size: 36px;
+    margin-bottom: 30px;
+    transition: 500ms linear;
+    
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    
+}
+
+.service-item {
+    flex: 1 1 300px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Adicionar ao styles.css */
+.horario-btn.active {
+    background-color: #cc8400;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: trransform 0.9s;
+}
+.service-item:hover img {
+    transform: scale(1.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* Seção Sobre a Barbearia Vila Lemos */
+.barbearia-info {
+    
+    padding: 50px 20px;
+    background-color: #faf9f96b;
+    text-align: center;
+}
+
+.barbearia-info-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333333;
+}
+
+.barbearia-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.barbearia-info h3 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+}
+
+.barbearia-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.barbearia-info ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.barbearia-info ul li {
+    margin-bottom: 10px;
+}
+
+.barbearia-info .highlight {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    margin-top: 5px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre a mensagem e o ícone */
+    margin-top: 10px;
+}
+
+.footer-contact p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.whatsapp-link {
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-link:hover {
+
+    text-decoration: underline;
+}
+
+.whatsapp-icon {
+    animation: float 3s ease-in-out infinite;
+    max-height: 60px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#mapa {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#mapa, h2{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-size: 35px;
+    
+}
+
+
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries para o footer */
+@media (max-width: 767px) {
+    footer .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para telas grandes (desktop) */
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+        color: #000000;
+        
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about-content img {
+        width: 30%;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        width: 50%;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+}
+
+/* Estilos para celulares */
+
+@media (max-width: 767px) {
+    header ul   {
+        width: 100%;
+        display: grid;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0 6px 0 0;
+       
+    }
+
+    header {
+        width: 100%;
+        background-color: #333;
+        padding: 2px 200px 0px 0px;
+    }
+
+    
+    header nav ul li a {
+        font-size: 1rem;
+        width: 100%;
+       
+        
+       
+       
+        
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        color: rgb(12, 11, 11);
+        
+    }
+    .hero-content p {
+        color:rgb(12, 11, 11);
+    }
+
+    .about-content img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    /* Ajustes na galeria de imagens */
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+
+#mapa, h2 {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #1b1717;
+    font-size: 35px;
+}
+
+/* Estilos para navegação em dispositivos móveis */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgb(252, 246, 246);
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        padding: auto;
+    }
+    .menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        
+        
+    }
+    .nav-menu {
+        display: none;
+        flex-direction:row;
+        position:absolute;
+        top: 100px;
+        right: 0;
+        height: 10px 2px;
+        text-align: center;
+        padding: 12px 0 12px 0;
+        background-color: #f1f1e8;
+        margin: 2px 2px;
+        
+        
+        
+    }
+    header nav ul li a {
+        padding: 10px;
+        margin: 0;
+        color: #0a0a0a;
+        font-size: 12px;
+        font-style:italic;
+        align-items: center;
+
+      
+        
+    }
+
+    .nav-menu li {
+        display: block;
+        margin: 2px;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+    .agendar-btn {
+    background-color: #FFA500;
+    color: rgb(255, 252, 252);
+    padding: 8px 6px;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    
+    
+}
+
+
+.agendar-btn {
+    position: absolute;
+    top: 68px; /* Ajuste essa altura conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
