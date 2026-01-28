@@ -1,50 +1,54 @@
-# **Barbearia Vila Lemos - Website** 🚀 
+# 💈 Barbearia Vila Lemos - Tradição & Estilo 🚀
 
-Bem-vindo!
-Este repositório contém o código do site da Barbearia Vila Lemos, uma barbearia localizada no bairro Vila Lemos, Campinas/SP, que preza pelo atendimento personalizado, estilo e tradição. O objetivo desse projeto é criar uma experiência amigável e visualmente atraente para os visitantes do site, ao mesmo tempo que facilita o agendamento de horários e a comunicação com os clientes.
+![Status](https://img.shields.io/badge/Status-Online-gold?style=for-the-badge)
+![Tech](https://img.shields.io/badge/Tech-HTML5%20|%20CSS3%20|%20JS-blue?style=for-the-badge)
 
-# **Visão Geral do Projeto**
+Bem-vindo ao repositório oficial da **Barbearia Vila Lemos**. Localizada em Campinas/SP, nossa barbearia une a essência tradicional de bairro com a precisão da estética moderna. Este site foi desenvolvido para oferecer uma experiência de agendamento rápida, elegante e totalmente otimizada.
 
-O site da Barbearia Vila Lemos foi desenvolvido utilizando tecnologias web modernas como HTML, CSS e JavaScript. Ele é totalmente responsivo, garantindo uma boa experiência de navegação em dispositivos móveis, tablets e desktops.
+## ✨ O que há de novo (Versão Premium)
 
+Nesta versão, elevamos o nível do projeto com:
+- **Design "Dark Mode" Premium:** Interface sofisticada com tons de preto e dourado (`#D4AF37`).
+- **Agendamento Inteligente:** Sistema de escolha de horários via modal com integração direta para o WhatsApp.
+- **Mapa Customizado:** Google Maps integrado com filtro CSS Dark para manter a harmonia visual.
+- **Menu Adaptativo:** Navegação fluida que se transforma automaticamente para dispositivos mobile.
 
-# **Principais Funcionalidades**
+## 🛠️ Tecnologias Utilizadas
 
-Menu de Navegação: Um menu simples e intuitivo para que os visitantes possam explorar todas as seções do site.
+* **HTML5** - Estrutura semântica e acessível.
+* **CSS3** - Estilização avançada com Flexbox, Grid e variáveis.
+* **JavaScript (ES6)** - Lógica de agendamento, manipulação de DOM e integração com API do WhatsApp.
+* **FontAwesome** - Iconografia profissional.
+* **Google Fonts** - Tipografia selecionada (Oswald & Montserrat).
 
-Seção de Serviços: Uma lista de serviços oferecidos pela barbearia, com detalhes e preços, para que os clientes possam escolher o serviço que desejam.
+## 📋 Seções do Projeto
 
-Agendamento Online: Um formulário interativo para que os usuários possam agendar seus horários diretamente no site. Inclui opções de escolha de data, hora e unidade.
+1.  **Hero Section:** Banner de impacto com tagline "Since 2024" e horários de funcionamento.
+2.  **História:** Seção sobre os valores e a tradição da unidade Vila Lemos.
+3.  **Serviços (Cards):** Grade de serviços com destaque para o "Combo do Patrão" e valores atualizados.
+4.  **Localização:** Mapa interativo estilizado para o modo escuro.
+5.  **Rodapé Social:** Links rápidos para WhatsApp, Instagram e Facebook com efeitos de hover.
 
-Mapa de Localização: Um mapa embutido do Google Maps, facilitando a localização da barbearia.
+## 🚀 Como visualizar o projeto
 
-Contato e Redes Sociais: Links rápidos para contato via WhatsApp, além de botões para as redes sociais da barbearia (Instagram e Facebook).
+O site está configurado para **Deploy Contínuo via Vercel**. Sempre que este repositório é atualizado, as mudanças refletem automaticamente no link oficial.
 
+---
 
-# **Estrutura do Projeto**
+## 💈 Tabela de Preços (Destaques)
 
-index.html: Página principal do site, contendo a estrutura básica de todas as seções.
+| Serviço | Valor |
+| :--- | :--- |
+| **Combo do Patrão (Cabelo, Barba, Sobrancelha)** | **R$ 50,00** |
+| Corte na Máquina | R$ 30,00 |
+| Corte na Tesoura | R$ 35,00 |
+| Barba | R$ 20,00 |
+| Outros Serviços | Sob Consulta |
 
-styles.css: Arquivo responsável pela estilização do site, incluindo o layout, cores e tipografia.
+---
 
-scripts.js: Scripts de JavaScript que adicionam interatividade ao site, como o funcionamento do modal de agendamento e o menu de navegação em dispositivos móveis.
+## 📝 Licença
 
-img/: Diretório onde estão armazenadas as imagens usadas no site, incluindo o logotipo da barbearia, imagens dos serviços e ícones de redes sociais.
+Este projeto está sob a licença MIT. Sinta-se à vontade para usar e estudar o código.
 
-# **Seções do Site**
-
-Home (Hero Section): Um banner de boas-vindas com a mensagem principal da barbearia.
-
-Sobre a Barbearia: Uma breve descrição sobre a filosofia e os valores da Barbearia Vila Lemos.
-
-Serviços: Exibição detalhada dos serviços oferecidos, como cortes de cabelo, barba e cortes kids.
-
-Localização: Um mapa interativo para que os clientes possam encontrar facilmente a barbearia.
-
-Contato: Links para WhatsApp, Instagram e Facebook, permitindo que os clientes entrem em contato diretamente com a equipe.
-
-# **Licença**
-
-Este projeto é de código aberto e está sob a licença MIT, permitindo que você use, modifique e distribua conforme necessário.
-
-Esperamos que este site seja uma vitrine para o talento da Barbearia Vila Lemos e uma ferramenta útil para os seus clientes. Sinta-se à vontade para explorar e sugerir melhorias.
+**Desenvolvido com foco em excelência e estilo. ✂️**
