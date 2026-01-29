@@ -5,7 +5,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const chips = document.querySelectorAll('.h-chip');
     const menuToggle = document.getElementById('menuToggle');
     const navMenu = document.getElementById('navMenu');
-    let selectedTime = "";
+    const themeToggle = document.getElementById('themeToggle');
+const themeIcon = themeToggle.querySelector('i');
+const body = document.body;
+
+themeToggle.onclick = () => {
+    body.classList.toggle('light-theme');
+    
+    if (body.classList.contains('light-theme')) {
+        // Se estiver no tema CLARO, mostra o SOL
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'light');
+    } else {
+        // Se estiver no tema ESCURO, mostra a LUA
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'dark');
+    }
+};
+
+// Manter o tema salvo ao carregar a página
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-theme');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+}
 
     // Abrir/Fechar Modal
     openBtn.onclick = () => modal.style.display = "flex";
