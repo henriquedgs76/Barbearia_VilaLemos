@@ -1,54 +1,59 @@
-# 💈 Barbearia Vila Lemos - Tradição & Estilo 🚀
+# Barbearia Vila Lemos - Tradicao e Estilo
 
 ![Status](https://img.shields.io/badge/Status-Online-gold?style=for-the-badge)
-![Tech](https://img.shields.io/badge/Tech-HTML5%20|%20CSS3%20|%20JS-blue?style=for-the-badge)
+![Tech](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS-blue?style=for-the-badge)
 
-Bem-vindo ao repositório oficial da **Barbearia Vila Lemos**. Localizada em Campinas/SP, nossa barbearia une a essência tradicional de bairro com a precisão da estética moderna. Este site foi desenvolvido para oferecer uma experiência de agendamento rápida, elegante e totalmente otimizada.
+Landing page institucional da **Barbearia Vila Lemos** (Campinas/SP) com foco em experiencia premium e agendamento rapido via WhatsApp.
 
-## ✨ O que há de novo (Versão Premium)
+## Destaques da versao atual
 
-Nesta versão, elevamos o nível do projeto com:
-- **Design "Dark Mode" Premium:** Interface sofisticada com tons de preto e dourado (`#D4AF37`).
-- **Agendamento Inteligente:** Sistema de escolha de horários via modal com integração direta para o WhatsApp.
-- **Mapa Customizado:** Google Maps integrado com filtro CSS Dark para manter a harmonia visual.
-- **Menu Adaptativo:** Navegação fluida que se transforma automaticamente para dispositivos mobile.
+- Design premium com tema escuro/claro e visual de **poligrafismo**.
+- Animacoes de entrada em textos, secoes e cards.
+- Bloco de diferenciais rapidos e secao "Como funciona" para aumentar clareza da oferta.
+- Prova social com indicadores de resultado e depoimentos de clientes.
+- CTA fixa no mobile para aumentar conversao de agendamento.
+- Contraste refinado entre tema escuro/claro para manter leitura confortavel.
+- FAQ interativo com schema (`FAQPage`) para melhorar SEO.
+- Botao de voltar ao topo e efeitos de scroll para navegacao mais fluida.
+- Modal de agendamento com:
+  - validacao de nome, servico, data e horario;
+  - validacao de telefone opcional com mascara;
+  - bloqueio de domingo (atendimento seg-sex 10:30-18:00 e sab 07:30-17:00);
+  - bloqueio de horarios com menos de 30 min de antecedencia no dia atual;
+  - envio automatico para WhatsApp com mensagem formatada.
+- Acessibilidade reforcada:
+  - skip link;
+  - foco visivel;
+  - modal com foco preso (focus trap);
+  - navegacao com `aria-*` e destaque de secao ativa.
+- Melhorias tecnicas:
+  - metadados SEO e Open Graph;
+  - JSON-LD (`Barbershop`);
+  - links externos com `noopener noreferrer`;
+  - ano dinamico no rodape.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias
 
-* **HTML5** - Estrutura semântica e acessível.
-* **CSS3** - Estilização avançada com Flexbox, Grid e variáveis.
-* **JavaScript (ES6)** - Lógica de agendamento, manipulação de DOM e integração com API do WhatsApp.
-* **FontAwesome** - Iconografia profissional.
-* **Google Fonts** - Tipografia selecionada (Oswald & Montserrat).
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Font Awesome
+- Google Fonts (Oswald + Montserrat)
 
-## 📋 Seções do Projeto
+## Estrutura
 
-1.  **Hero Section:** Banner de impacto com tagline "Since 2024" e horários de funcionamento.
-2.  **História:** Seção sobre os valores e a tradição da unidade Vila Lemos.
-3.  **Serviços (Cards):** Grade de serviços com destaque para o "Combo do Patrão" e valores atualizados.
-4.  **Localização:** Mapa interativo estilizado para o modo escuro.
-5.  **Rodapé Social:** Links rápidos para WhatsApp, Instagram e Facebook com efeitos de hover.
+- `index.html`: estrutura semantica e SEO.
+- `styles.css`: tema, layout responsivo, animacoes e poligrafismo.
+- `scripts.js`: interacoes, acessibilidade e fluxo de agendamento.
+- `img/`: assets visuais.
 
-## 🚀 Como visualizar o projeto
+## Como executar localmente
 
-O site está configurado para **Deploy Contínuo via Vercel**. Sempre que este repositório é atualizado, as mudanças refletem automaticamente no link oficial.
+1. Clone o repositorio.
+2. Abra `index.html` no navegador.
 
----
+Opcional: use um servidor local para testes mais realistas (ex.: Live Server no VS Code).
 
-## 💈 Tabela de Preços (Destaques)
+## Licenca
 
-| Serviço | Valor |
-| :--- | :--- |
-| **Combo do Patrão (Cabelo, Barba, Sobrancelha)** | **R$ 50,00** |
-| Corte na Máquina | R$ 30,00 |
-| Corte na Tesoura | R$ 35,00 |
-| Barba | R$ 20,00 |
-| Outros Serviços | Sob Consulta |
-
----
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Sinta-se à vontade para usar e estudar o código.
-
-**Desenvolvido com foco em excelência e estilo. ✂️**
+Este projeto esta sob a licenca MIT. Consulte o arquivo [LICENSE](LICENSE).

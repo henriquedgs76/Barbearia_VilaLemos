@@ -3,175 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Vila Lemos | Tradição & Estilo</title>
+    <title>Barbearia Vila Lemos | Tradicao e Estilo em Campinas</title>
+    <meta name="description" content="Barbearia Vila Lemos em Campinas: cortes modernos, barba, combo premium e agendamento rapido via WhatsApp.">
+    <meta name="robots" content="index, follow">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#0d0d0d">
+    <link rel="canonical" href="https://barbearia-vila-lemos.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Barbearia Vila Lemos | Tradicao e Estilo">
+    <meta property="og:description" content="Agende seu horario na Barbearia Vila Lemos com atendimento personalizado em Campinas.">
+    <meta property="og:image" content="img/hero-bg.jpg">
+    <meta property="og:url" content="https://barbearia-vila-lemos.vercel.app/">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Barbearia Vila Lemos | Tradicao e Estilo">
+    <meta name="twitter:description" content="Cortes, barba e combo premium com agendamento rapido via WhatsApp.">
+    <meta name="twitter:image" content="img/hero-bg.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="icon" type="image/png" href="img/logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteudo</a>
+    <noscript>
+        <p class="noscript-warning">Ative o JavaScript para usar o agendamento online.</p>
+    </noscript>
+
     <header id="header">
-    <nav class="container">
-        <img src="img/logo.png" alt="Barbearia Vila Lemos" class="logo">
-        <ul id="navMenu" class="nav-menu">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#localizacao">Localização</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-        
-        <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
-            <button id="themeToggle" class="theme-toggle" title="Alternar Tema">
-    <i class="fas fa-moon"></i>
-</button>
-            <button id="agendarHorarioBtn" class="cta-button">AGENDAR</button>
-        </div>
+        <nav class="container" aria-label="Navegacao principal">
+            <a href="#topo" class="logo-link" aria-label="Ir para o inicio">
+                <img src="img/logo.png" alt="Barbearia Vila Lemos" class="logo" width="120" height="50" loading="eager" decoding="async">
+            </a>
 
-        <button id="menuToggle" class="mobile-menu" aria-label="Abrir Menu">☰</button>
-    </nav>
-</header>
+            <ul id="navMenu" class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Servicos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#localizacao">Localizacao</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-    <section class="hero-premium">
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-            <span class="tagline">SINCE 2024</span>
-            <h1>Corte de respeito,<br> estilo de vida.</h1>
-            <p>Horário: Seg a Sáb - 09:00 às 18:00</p>
-        </div>
-    </section>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" title="Alternar Tema" aria-label="Alternar entre tema escuro e claro" aria-pressed="false" type="button">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button id="agendarHorarioBtn" class="cta-button" type="button" data-open-modal>AGENDAR</button>
+            </div>
 
-    <section id="sobre" class="about-section container">
-        <div class="about-grid">
-            <div class="about-text">
-                <h2 class="section-title">Nossa História</h2>
-                <p>A <span class="gold">Barbearia Vila Lemos</span> é o ponto de encontro de quem valoriza a tradição de bairro com a precisão moderna. Localizada em Campinas/SP, oferecemos mais que um corte: um momento de cuidado em um ambiente familiar.</p>
-                <div class="features">
-                    <div class="feat-item"><i class="fas fa-check gold"></i> Atendimento Personalizado</div>
-                    <div class="feat-item"><i class="fas fa-check gold"></i> Ambiente Aconchegante</div>
-                    <div class="feat-item"><i class="fas fa-check gold"></i> Barbeiros Especialistas</div>
+            <button id="menuToggle" class="mobile-menu" aria-label="Abrir Menu" aria-controls="navMenu" aria-expanded="false" type="button">&#9776;</button>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section id="topo" class="hero-premium" aria-label="Destaque inicial">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <span class="tagline">SINCE 2024</span>
+                <h1>Corte de respeito,<br>estilo de vida.</h1>
+                <p>Horario: Seg a Sex - 10:30 as 18:00 | Sab - 07:30 as 17:00</p>
+                <button class="hero-cta" type="button" data-open-modal>Reservar agora</button>
+            </div>
+        </section>
+
+        <section class="quick-info container" aria-label="Diferenciais principais">
+            <div class="quick-grid">
+                <article class="quick-item">
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
+                    <div>
+                        <h3>Agendamento em 1 minuto</h3>
+                        <p>Escolha servico, horario e confirme direto no WhatsApp.</p>
+                    </div>
+                </article>
+                <article class="quick-item">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <div>
+                        <h3>Padrao de qualidade</h3>
+                        <p>Acabamento no detalhe, higiene e atencao do inicio ao fim.</p>
+                    </div>
+                </article>
+                <article class="quick-item">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <div>
+                        <h3>Horario respeitado</h3>
+                        <p>Fluxo de atendimento organizado para reduzir espera.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Nossa Historia</h2>
+                    <p>A <span class="gold">Barbearia Vila Lemos</span> e o ponto de encontro de quem valoriza a tradicao de bairro com precisao moderna. Localizada em Campinas/SP, oferecemos mais que um corte: um momento de cuidado em um ambiente familiar.</p>
+                    <div class="features">
+                        <div class="feat-item"><i class="fas fa-check gold"></i> Atendimento Personalizado</div>
+                        <div class="feat-item"><i class="fas fa-check gold"></i> Ambiente Aconchegante</div>
+                        <div class="feat-item"><i class="fas fa-check gold"></i> Barbeiros Especialistas</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/logo.png" alt="Logo da Barbearia Vila Lemos" width="640" height="640" loading="lazy" decoding="async">
                 </div>
             </div>
-            <div class="about-image">
-                <img src="img/logo.png" alt="Interior da Barbearia">
+        </section>
+
+        <section class="process-section" aria-label="Como funciona o agendamento">
+            <div class="container">
+                <h2 class="section-title center">Como funciona</h2>
+                <div class="process-grid">
+                    <article class="process-step">
+                        <span class="step-number">01</span>
+                        <h3>Escolha o servico</h3>
+                        <p>Selecione o tipo de atendimento ideal para seu estilo.</p>
+                    </article>
+                    <article class="process-step">
+                        <span class="step-number">02</span>
+                        <h3>Defina data e horario</h3>
+                        <p>Escolha o melhor horario com confirmacao imediata.</p>
+                    </article>
+                    <article class="process-step">
+                        <span class="step-number">03</span>
+                        <h3>Confirme no WhatsApp</h3>
+                        <p>Receba o resumo do agendamento pronto para enviar.</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="servicos" class="services-premium">
-    <div class="container">
-        <h2 class="section-title center">Nossos Serviços</h2>
-        <div class="services-grid">
-            
-            <article class="service-card">
-                <div class="card-img" style="background-image: url('img/cabelo.jpg');"></div>
-                <div class="card-info">
-                    <h3>Corte na Máquina</h3>
-                    <p>Praticidade e precisão para um visual sempre alinhado.</p>
-                    <span class="price">R$ 30,00</span>
+        <section id="servicos" class="services-premium">
+            <div class="container">
+                <h2 class="section-title center">Nossos Servicos</h2>
+                <div class="services-grid">
+                    <article class="service-card service-card-cabelo" data-service="Corte na Maquina">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <h3>Corte na Maquina</h3>
+                            <p>Praticidade e precisao para um visual sempre alinhado.</p>
+                            <span class="price">R$ 30,00</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card service-card-tesoura" data-service="Corte na Tesoura">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <h3>Corte na Tesoura</h3>
+                            <p>Acabamento detalhado e personalizado para o seu estilo.</p>
+                            <span class="price">R$ 35,00</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card service-card-barba" data-service="Barba">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <h3>Barba</h3>
+                            <p>Aparo e modelagem com hidratacao de alta qualidade.</p>
+                            <span class="price">R$ 20,00</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card service-card-combo highlight-card" data-service="Combo do Patrao">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <div class="tag-premium">MAIS VENDIDO</div>
+                            <h3>Combo do Patrao</h3>
+                            <p>Cabelo, Barba e Sobrancelha. O trato completo para quem exige o melhor.</p>
+                            <span class="price">R$ 50,00</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card service-card-platinado" data-service="Platinado">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <h3>Platinado</h3>
+                            <p>Transformacao completa com tecnica e protecao capilar.</p>
+                            <span class="price">Sob Consulta</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card service-card-freestyle" data-service="Freestyle">
+                        <div class="card-img" aria-hidden="true"></div>
+                        <div class="card-info">
+                            <h3>Freestyle</h3>
+                            <p>Desenhos e riscos personalizados com arte e navalha.</p>
+                            <span class="price">Sob Consulta</span>
+                        </div>
+                    </article>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="service-card">
-                <div class="card-img" style="background-image: url('img/corte-moderno.jpg');"></div>
-                <div class="card-info">
-                    <h3>Corte na Tesoura</h3>
-                    <p>Acabamento detalhado e personalizado para o seu estilo.</p>
-                    <span class="price">R$ 35,00</span>
+        <section class="proof-section" aria-label="Prova social e depoimentos">
+            <div class="container">
+                <h2 class="section-title center">Resultado que gera fidelidade</h2>
+                <p class="proof-subtitle">Atendimento consistente, ambiente de bairro e acabamento no detalhe.</p>
+
+                <div class="proof-stats">
+                    <article class="stat-card">
+                        <strong>+700</strong>
+                        <span>Atendimentos no ultimo ano</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>4.9/5</strong>
+                        <span>Media de satisfacao dos clientes</span>
+                    </article>
+                    <article class="stat-card">
+                        <strong>72%</strong>
+                        <span>Clientes recorrentes mensalmente</span>
+                    </article>
                 </div>
-            </article>
 
-            <article class="service-card">
-                <div class="card-img" style="background-image: url('img/barba.jpg');"></div>
-                <div class="card-info">
-                    <h3>Barba</h3>
-                    <p>Aparo e modelagem com hidratação de alta qualidade.</p>
-                    <span class="price">R$ 20,00</span>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <p>"Corte impecavel e atendimento muito atencioso. Voltei e virei cliente fixo."</p>
+                        <h3>Lucas M.</h3>
+                        <span>Corte + Barba</span>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"Ambiente organizado, horario respeitado e acabamento de alto nivel."</p>
+                        <h3>Andre S.</h3>
+                        <span>Combo do Patrao</span>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"Sempre saio com o visual que pedi. Profissionais muito caprichosos."</p>
+                        <h3>Diego R.</h3>
+                        <span>Corte na Tesoura</span>
+                    </article>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="service-card highlight-card">
-                <div class="card-img" style="background-image: url('img/barba-completa.jpg');"></div>
-                <div class="card-info">
-                    <div class="tag-premium">MAIS VENDIDO</div>
-                    <h3>Combo do Patrão</h3>
-                    <p>Cabelo, Barba e Sobrancelha. O trato completo para quem exige o melhor.</p>
-                    <span class="price">R$ 50,00</span>
+        <section id="faq" class="faq-section" aria-label="Perguntas frequentes">
+            <div class="container">
+                <h2 class="section-title center">Perguntas frequentes</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Preciso pagar para agendar?</summary>
+                        <p>Nao. O agendamento e gratuito e confirmado direto pelo WhatsApp.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Posso remarcar meu horario?</summary>
+                        <p>Sim. Basta responder no WhatsApp com antecedencia para remarcacao.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Voces atendem aos domingos?</summary>
+                        <p>Nao. O atendimento ocorre de segunda a sexta das 10:30 as 18:00, e aos sabados das 07:30 as 17:00.</p>
+                    </details>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="service-card">
-                <div class="card-img" style="background-image: url('img/platinado.jpg');"></div>
-                <div class="card-info">
-                    <h3>Platinado</h3>
-                    <p>Transformação completa com técnica e proteção capilar.</p>
-                    <span class="price">Sob Consulta</span>
+        <section id="localizacao" class="location-section">
+            <div class="container">
+                <h2 class="section-title center">Localizacao</h2>
+                <p class="address-text"><i class="fas fa-map-marker-alt gold"></i> Vila Lemos, Campinas - SP</p>
+                <div class="map-container">
+                    <iframe title="Mapa da Barbearia Vila Lemos em Campinas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.783247309657!2d-47.034898399999996!3d-22.921364300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee1eb5fdc35%3A0xaad1441a6866a268!2sR.%20N%C3%ADcola%20Di%20Marzio%2C%20110%20-%20Vila%20Lemos%2C%20Campinas%20-%20SP%2C%2013100-490!5e0!3m2!1spt-BR!2sbr!4v1769629602777!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </article>
-
-            <article class="service-card">
-                <div class="card-img" style="background-image: url('img/freestyle.jpg');"></div>
-                <div class="card-info">
-                    <h3>Freestyle</h3>
-                    <p>Desenhos e riscos personalizados com arte e navalha.</p>
-                    <span class="price">Sob Consulta</span>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-    <section id="localizacao" class="location-section">
-        <div class="container">
-            <h2 class="section-title center">Localização</h2>
-            <p class="address-text"><i class="fas fa-map-marker-alt gold"></i> Vila Lemos, Campinas - SP</p>
-            <div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.783247309657!2d-47.034898399999996!3d-22.921364300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee1eb5fdc35%3A0xaad1441a6866a268!2sR.%20N%C3%ADcola%20Di%20Marzio%2C%20110%20-%20Vila%20Lemos%2C%20Campinas%20-%20SP%2C%2013100-490!5e0!3m2!1spt-BR!2sbr!4v1769629602777!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <footer id="contato">
         <div class="container footer-grid">
             <div class="footer-info">
-                <img src="img/logo.png" alt="Logo" class="footer-logo">
-                <p>O estilo que você merece, o respeito que você busca.</p>
+                <img src="img/logo.png" alt="Logo" class="footer-logo" width="140" height="60" loading="lazy" decoding="async">
+                <p>O estilo que voce merece, o respeito que voce busca.</p>
             </div>
             <div class="footer-social">
                 <h3>Nossas Redes</h3>
                 <div class="social-icons">
-                    <a href="https://api.whatsapp.com/send?phone=5519995618697" target="_blank" class="ws-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/barbearia_vilalemos/" target="_blank" class="ig-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100089040384068" target="_blank" class="fb-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5519995618697" target="_blank" rel="noopener noreferrer" class="ws-icon" aria-label="Abrir WhatsApp da Barbearia Vila Lemos" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/barbearia_vilalemos/" target="_blank" rel="noopener noreferrer" class="ig-icon" aria-label="Abrir Instagram da Barbearia Vila Lemos" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100089040384068" target="_blank" rel="noopener noreferrer" class="fb-icon" aria-label="Abrir Facebook da Barbearia Vila Lemos" title="Facebook"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
         </div>
-       <div class="footer-bottom">
-    <p>© 2024 Barbearia Vila Lemos. Todos os direitos reservados.</p>
-    <p>Desenvolvido por <a href="https://henriquedgs76.github.io/meu-portfolio/" target="_blank" style="color: var(--gold); text-decoration: none; font-weight: bold;">Henrique Developer</a></p>
-</div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear">2026</span> Barbearia Vila Lemos. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://henriquedgs76.github.io/meu-portfolio/" target="_blank" rel="noopener noreferrer" class="dev-link">Henrique Developer</a></p>
+        </div>
     </footer>
 
-    <div id="agendarHorarioModal" class="modal-premium">
-        <div class="modal-box">
-            <button class="close-modal">×</button>
-            <h2>Agendar Horário</h2>
+    <div class="mobile-sticky-cta" aria-label="Atalho rapido de agendamento">
+        <button class="sticky-main" type="button" data-open-modal>Agendar agora</button>
+        <a class="sticky-wa" href="https://wa.me/5519995618697" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+
+    <div id="agendarHorarioModal" class="modal-premium" role="dialog" aria-modal="true" aria-labelledby="agendarTitulo">
+        <div class="modal-box" role="document">
+            <button class="close-modal" aria-label="Fechar modal de agendamento" type="button">&times;</button>
+            <h2 id="agendarTitulo">Agendar Horario</h2>
             <form id="agendarForm">
-                <input type="text" id="nomeCompleto" placeholder="Seu Nome" required>
+                <label for="nomeCompleto" class="sr-only">Nome completo</label>
+                <input type="text" id="nomeCompleto" placeholder="Seu Nome" autocomplete="name" minlength="3" maxlength="70" required>
+
+                <label for="telefone" class="sr-only">Telefone para contato</label>
+                <input type="tel" id="telefone" placeholder="WhatsApp para contato (opcional)" inputmode="tel" autocomplete="tel" maxlength="16">
+
+                <label for="servico" class="sr-only">Servico desejado</label>
+                <select id="servico" required>
+                    <option value="">Selecione o servico</option>
+                    <option value="Corte na Maquina">Corte na Maquina</option>
+                    <option value="Corte na Tesoura">Corte na Tesoura</option>
+                    <option value="Barba">Barba</option>
+                    <option value="Combo do Patrao">Combo do Patrao</option>
+                    <option value="Platinado">Platinado</option>
+                    <option value="Freestyle">Freestyle</option>
+                </select>
+
+                <label for="data" class="sr-only">Data do agendamento</label>
                 <input type="date" id="data" required>
-                <div class="horarios-grid">
-                    <button type="button" class="h-chip">09:00</button>
-                    <button type="button" class="h-chip">10:00</button>
-                    <button type="button" class="h-chip">11:00</button>
-                    <button type="button" class="h-chip">13:00</button>
-                    <button type="button" class="h-chip">14:00</button>
-                    <button type="button" class="h-chip">15:00</button>
-                    <button type="button" class="h-chip">16:00</button>
-                    <button type="button" class="h-chip">17:00</button>
-                    <button type="button" class="h-chip">18:00</button>
-                </div>
+
+                <div class="horarios-grid" role="group" aria-label="Selecao de horarios"></div>
+
+                <p class="modal-note">Seg a Sex: 10:30 as 18:00 | Sab: 07:30 as 17:00 | Domingo fechado.</p>
+                <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
                 <button type="submit" class="submit-premium">CONFIRMAR VIA WHATSAPP</button>
             </form>
         </div>
     </div>
+
+    <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Barbershop",
+            "name": "Barbearia Vila Lemos",
+            "image": "img/logo.png",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "R. Nicola Di Marzio, 110",
+                "addressLocality": "Campinas",
+                "addressRegion": "SP",
+                "postalCode": "13100-490",
+                "addressCountry": "BR"
+            },
+            "telephone": "+55-19-99561-8697",
+            "url": "https://barbearia-vila-lemos.vercel.app",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "10:30",
+                    "closes": "18:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "07:30",
+                    "closes": "17:00"
+                }
+            ],
+            "priceRange": "$$",
+            "sameAs": [
+                "https://www.instagram.com/barbearia_vilalemos/",
+                "https://www.facebook.com/profile.php?id=100089040384068"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Preciso pagar para agendar?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nao. O agendamento e gratuito e confirmado direto pelo WhatsApp."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Posso remarcar meu horario?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sim. Basta responder no WhatsApp com antecedencia para remarcacao."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Voces atendem aos domingos?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nao. O atendimento ocorre de segunda a sexta das 10:30 as 18:00, e aos sabados das 07:30 as 17:00."
+                    }
+                }
+            ]
+        }
+    </script>
 
     <script src="scripts.js"></script>
 </body>
